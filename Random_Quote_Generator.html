@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>RandomQuote</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica|IM+Fell+English|Just+Me+Again+Down+Here|Revalia|Special+Elite" rel="stylesheet">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+
+      <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      @import "compass/css3";
+.wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+  max-width: 700px;
+  min-height:250px;
+  margin: auto;
+  border-radius:10px;
+  overflow:hidden;
+  background:white;
+  margin-top:200px;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+#quoteMark {
+  font-family: 'Revalia', cursive !important;
+  font-size:1.6em;
+}
+
+.quote {
+  text-align: center;
+  display:flex;
+}
+
+
+
+#quoter {
+  text-align: center;
+  background-color: #0A5CD4;
+  color: white;
+  border-style: none;
+  box-shadow: none;
+  cursor:pointer;
+}
+
+#quote-content {
+  font-family: 'Special Elite', cursive;
+  font-size:1.2em;
+  text-align:left;
+  padding-top:10px;
+  flex:1;
+}
+
+#quote-title {
+  text-align: right;
+  font-family: 'Special Elite', cursive;
+}
+
+.tweet {
+  padding:0;
+}
+
+#tweetButton {
+  font-size: 2.2em;
+  color: #0A5CD4;
+}
+
+
+@media all and (min-width: 400px) {
+  .base {
+    flex: 1 auto;
+  }
+  
+  #quote-title{
+    order:2;
+  }
+  .tweet {
+    order: 2;
+    display: flex;
+    align-items:flex-end;
+    padding:0px 10px 0px 20px;
+  }
+  .quoteButton {
+    order: 3;
+    
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+   justify-content:flex-end;
+    
+   
+    padding: 10px 20px 10px 10px;
+    
+  }
+}
+
+body {
+  padding: 2em;
+  background-color: #0A5CD4;
+}
+    </style>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+  <head>
+  <link href="https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica|IM+Fell+English|Just+Me+Again+Down+Here|Revalia|Special+Elite" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="quote">
+      <div id="quoteMark">"&nbsp</div>
+      <div id="quote-content"></div>
+      
+    </div>
+    <div id="quote-title"></div>
+
+
+    <div class="base quoteButton"><button id="quoter" class="btn btn-secondary">Quoter</button></div>
+    <div class="base tweet"><a id="tweetButton" href="" target="_blank"><i class="fa fa-twitter"></i></a></div>
+  </div>
+</body>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.4.4/randomColor.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
